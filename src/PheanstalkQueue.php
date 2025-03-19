@@ -62,7 +62,7 @@ class PheanstalkQueue implements Queue
     /**
      * {@inheritdoc}
      */
-    public function count()
+    public function count(): int
     {
         $stats = $this->pheanstalk->statsTube($this->tubeName);
 

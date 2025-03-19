@@ -75,7 +75,7 @@ class MongoQueue implements Queue
     /**
      * {@inheritdoc}
      */
-    public function count()
+    public function count(): int
     {
         return $this->getCollection()->count();
     }

@@ -75,7 +75,7 @@ LUA;
     /**
      * {@inheritdoc}
      */
-    public function count()
+    public function count(): int
     {
         $result = $this->redis->zCard('items');
         $this->assertResult($result);

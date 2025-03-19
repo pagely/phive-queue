@@ -82,7 +82,7 @@ class SysVQueue implements Queue
     /**
      * {@inheritdoc}
      */
-    public function count()
+    public function count(): int
     {
         $data = msg_stat_queue($this->getQueue());
 

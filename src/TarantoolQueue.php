@@ -83,7 +83,7 @@ class TarantoolQueue implements Queue
     /**
      * {@inheritdoc}
      */
-    public function count()
+    public function count(): int
     {
         $result = $this->tarantool->call('queue.statistics', [
             $this->space,

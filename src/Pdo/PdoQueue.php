@@ -59,7 +59,7 @@ abstract class PdoQueue implements Queue
     /**
      * {@inheritdoc}
      */
-    public function count()
+    public function count(): int
     {
         $stmt = $this->pdo->query('SELECT COUNT(*) FROM '.$this->tableName);
         $result = $stmt->fetchColumn();
