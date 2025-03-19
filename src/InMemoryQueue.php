@@ -60,7 +60,7 @@ class InMemoryQueue implements Queue
     /**
      * {@inheritdoc}
      */
-    public function count()
+    public function count(): int
     {
         return $this->queue->count();
     }

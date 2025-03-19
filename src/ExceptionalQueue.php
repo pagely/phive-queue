@@ -46,7 +46,7 @@ class ExceptionalQueue implements Queue
     /**
      * {@inheritdoc}
      */
-    public function count()
+    public function count(): int
     {
         return $this->exceptional(function () {
             return $this->queue->count();
